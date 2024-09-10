@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+/*nav{
+    background-image: url(fondo.jpg);
+    height: 80px;
+    background-position: center;
+    background-size: cover;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 40px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: aliceblue;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+a:hover{
+    color: aqua;
+}
+.checkbtn{
+    font-size: 30px;
+    color: aliceblue;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+} Prototipo que no funciona*/
+body {
+    background-image: url(fondo1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background: #5f5858;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(211, 14, 14, 0.651);
+    position: relative;
+    top: 10px;
+    right: 500px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+h3{
+    margin-bottom: 20px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #df1021;
+}
+.Tairan{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: 260px;
+}
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 45px;
+    background-color: #df1021;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;    
+}
+
+button:hover {
+    background-color: #05080a;
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 18px;
+}
+/*@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+
+    }
+} Prototipo que no funciona*/
+nav {
+    background-color: black;
+    height: 80px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    height: 40px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin-left: 20px;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background 0.3s;
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+a:hover{
+    color: aqua;
+}
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+@media (max-width: 768px) {
+    
+    .nav-list {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #05080a;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .container{
+        max-width: 350px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+        background: #5f5858;
+        border-radius: 30px;
+        box-shadow: 0 0 20px rgba(211, 14, 14, 0.651);
+        position: relative;
+        top: 160px;
+        left: 10px;
+    }
+    .Tairan{
+        max-width: 350px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        top: 170px;
+    }
+}
